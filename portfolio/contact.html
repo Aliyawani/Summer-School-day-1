@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact</title>
+<link rel="icon" type="image/png" href="Snapchat-220058586.jpg">
+
+</head>
+
+<body>
+    <nav>
+        <label for="nav">NAVIGATE:</label>
+        <select id="nav" onchange="window.location.href=this.value">
+
+            <option value="" disabled selected>Select an option</option>
+            <option value="portfolio.html">HOME</option>
+            <option value="about.html">ABOUT</option>
+        </select>
+
+
+    </nav>
+
+    <main>
+        <h1 align="center">Contact Form</h1>
+        <table align="center" width="500px">
+            <tr>
+                <td>
+                    <form align="center" action="portfolio.html">
+                        <label for="name">NAME</label>
+                        <input type<input type="text" id="name" name="name" required>
+                        <br><br>
+
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+
+                        <label for="phone">PHONE NUMBER:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                        <br><br>
+
+                        <label for="message">MESSAGE:</label>
+                        <textarea id="message" name="message" rows="2" cols="30"></textarea>
+                        <br><br>
+                        <p>CONTACT THROUGH:</p>
+                        <input type="checkbox" id="contactemail" name="contactmethod" value="email">
+                        <lable for="contactemail">Email</lable>
+                        <br><br>
+
+                        <input type="checkbox" id="contactphone" name="contactmethod" value="phone">
+                        <lable for="contactphone">Phone</lable>
+                        <br><br>
+
+                        <input type="checkbox" id="contacttext" name="contactmethod" value="text">
+                        <lable for="contacttext">Text</lable>
+                        <br><br>
+
+                        <p>PURPOSE</p>
+
+                        <input type="radio" id="general" name="Purpose" value="general purpose">
+                        <label for="general purpose">General Purpose</label>
+                        <br><br>
+
+                        <input type="radio" id="business" name="Purpose" value="business purpose">
+                        <label for="business purpose">Business Purpose</label>
+                        <br><br>
+
+                        <input type="radio" id="support" name="Purpose" value="other purpose">
+                        <label for="other purpose">other Purpose</label>
+                        <br><br>
+
+                        <label for="date">DATE:</label>
+                        <input type="date" id="date" name="date">
+                        <br><br>
+                        <label for="interest">Your Interest Level:</label>
+                        <input type="range" id="interest" name="interest" min="1" max="5" value="3"
+                            oninput="document.getElementById('interestValue').textContent = this.value">
+                        Level: <span id="interestValue">3</span> (1 = Low, 5 = High
+
+                        <br><br>
+
+                        <button>Submit</button>
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>
